@@ -264,12 +264,12 @@ box-shadow: 0px 1px 2px 2px rgb(197, 195, 195), 0 0 10px rgba(0, 0, 0, 0.1);
         width: 100%;
         height: 15%;
         margin-bottom: 5rem;
+        Justify-content:space-between;
     }
     #inputHolder{
         width: 100%;
         margin-top: .5rem;
-        margin-bottom: .5rem;
-        height: 3rem;
+        margin-bottom: .4rem;
         /* border: 1px solid yellow; */
     }
     #filterRegion{
@@ -329,6 +329,7 @@ box-shadow: 0px 1px 2px 2px rgb(197, 195, 195), 0 0 10px rgba(0, 0, 0, 0.1);
         width: 100%;
         height: 15%;
         margin-bottom: 5rem;
+        Justify-content:space-between;
     }
     #inputHolder{
         width: 100%;
@@ -340,7 +341,7 @@ box-shadow: 0px 1px 2px 2px rgb(197, 195, 195), 0 0 10px rgba(0, 0, 0, 0.1);
     #filterRegion{
         width: 50%;
         height: 3rem;
-        margin: .3rem;
+        margin: .3rem;   
         /* border: 1px solid yellow; */
     }
     #countryCardsHolder{

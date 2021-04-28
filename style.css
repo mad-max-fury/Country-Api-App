@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width:100vw;
+    background-color:  hsl(0, 0%, 98%);
+
+}
+main{
+    display: flex;
+    height: 100%;
+    width:100%;
+    flex-direction: column;
+    /* display: none; */
+
+}
+#ModalWindow{
+    display: flex;
+    height: 100%;
+    width:100%;
+    flex-direction: column;
+    margin-left: -100vw;
+}
+
+#firstNav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly ;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    background:  hsl(0, 0%, 100%);
+    box-shadow: 0 4px 3px -2px rgb(236, 234, 234);
+}
+#firstNav h1{
+    /* border: 1px solid yellow; */
+    margin-right: 50%;
+    padding: 1rem;
+    width: 50%;
+}
+#darkLight{
+    /* border: 1px solid red; */
+    width: 10rem;
+    padding: 1rem;
+
+}
+.dark ,.light{
+/* border:1px solid greenyellow; */
+width: 100%;
+display: flex;
+justify-content: space-between;
+background-color: white;
+flex-direction: row;
+height: 30px;
+outline: 0;
+border: 0;
+align-items: center;
+
+
+}
+.light i,.dark i{
+    color: goldenrod;
+}
+.dark{
+    display: none;
+    /* border:1px solid burlywood; */
+}
+#section{
+    /* border: 1px solid green; */
+    width: 88%;
+    margin-top: 3%;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+}
+#sortables{
+    /* border: 1px solid  #ccc; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+}
+#inputHolder{
+width: 40%;
+/* border: 1px solid yellow; */
+display: flex;
+flex-direction: row;
+align-items:center;
+justify-content: space-around;
+background-color:  hsl(0, 0%, 100%);
+box-shadow:  4px 4px 3px -2px rgb(206, 205, 205), 0 0 10px rgba(0, 0, 0, 0.1) ;
+border-radius: 4px;
+}
+#inputHolder> i{
+    width: 10%;
+    height: 100%;
+    font-size: 25px;
+    color: rgb(133, 129, 129);
+    align-self: center;
+    padding-left: 15px;
+    padding: 0px 15px -15px 15px;
+    margin-bottom: -12px;
+    justify-self: center;
+
+}
+#sortables >#inputHolder> input{
+    padding-left: 10px;
+    height: 100%;
+    width: 80%;
+    outline: 0;
+    border: 0;
+    background-color: white;
+    font-size: medium;
+}
+#filterRegion{
+    width: 15%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+}
+#filterRegion input{
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: medium;
+    background:  hsl(0, 0%, 100%)    ;
+    border-radius: 5px;
+    box-shadow:  4px 4px 3px -2px rgb(206, 205, 205), 0 0 10px rgba(0, 0, 0, 0.1) ;
+}
+#countryCardsHolder{
+    /* border:1px solid green; */
+    width: 100%;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-row-gap: 3rem;
+
+}
+.countryCard{
+    height: 18rem;
+    width: 16rem;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 4px;
+    background:  hsl(0, 0%, 100%);
+    box-shadow: 0px 1px 2px 2px rgb(197, 195, 195), 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+#logo{
+    height: 55%;
+    width: 100%;
+    background-repeat: no-repeat;
+    /* border: 1px solid yellow; */
+}
+
+#detail{
+    height: 45%;
+    /* border: 1px solid violet; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    
+}
+#detail h3{
+    /* border: 1px solid teal; */
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#ctrl1 button{
+width: 120px;
+height: 30px;
+border-radius: 14px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+background-color: white;
+outline: 0;
+border: 0;
+
+box-shadow: 0px 1px 2px 2px rgb(197, 195, 195), 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+}
+#link{
+    text-decoration: none;
+    color: black;
+}
+#link span{
+    color:  hsl(180, 2%, 33%);
+    font-size: medium;
+    font-weight: lighter;
+}
+#cardInfo{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid green; */
+    width: 100%;
+    align-self: center;
+    align-content: center;
+    margin-top: 3rem;
+    justify-content: space-between;
+
+}
+#ctrl2{
+    height: 25rem;
+    width: 39%;
+    border-radius: 10px;
+
+    /* border: 1px solid yellow; */
+    box-shadow: 0px 1px 2px 2px rgb(197, 195, 195), 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#ctrl3{
+    height: 18rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    margin-left: 3rem;
+}
+#firstDivision{
+    display: flex;
+    flex-direction: row;
+    justify-content: safe;
+}
+#aside2{
+    margin-left: 9rem;
+}
+
+
+
+@media screen and (max-width:899px) and (min-width:600px) {
+    main{
+        width: 100%;
+    }
+    #firstNav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #firstNav h1{
+        font-size: 1.4rem;
+        width: 60%;
+        /* border: 1px solid yellow; */
+        word-wrap: none;
+    }
+    #sortables{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 15%;
+        margin-bottom: 1rem;
+    }
+    #inputHolder{
+        width: 100%;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        height: 3rem;
+        /* border: 1px solid yellow; */
+    }
+    #filterRegion{
+        width: 50%;
+        height: 3rem;
+        margin: .3rem;
+        /* border: 1px solid yellow; */
+    }
+    #countryCardsHolder{
+        display: grid;
+        grid-template-columns:  repeat(2, auto);
+        align-items: center;
+        margin: auto;
+        /* justify-content: center; */
+    }
+}
+@media screen and (max-width:1250px) and (min-width:900px){
+    #countryCardsHolder{
+        display: grid;
+        grid-template-columns:  repeat(3, auto);
+        /* justify-content: center; */
+        align-items: center;
+    }
+    #cardInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #firstDivision{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:599px) and (min-width:280px) {
+    main{
+        width: 100%;
+    }
+    #firstNav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #firstNav h1{
+        font-size: 1rem;
+        width: 70%;
+        /* border: 1px solid yellow; */
+        display: flex;
+        margin: 0;
+    }
+    #sortables{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 15%;
+        margin-bottom: 1rem;
+    }
+    #inputHolder{
+        width: 100%;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        height: 3rem;
+        /* border: 1px solid yellow; */
+    }
+    #filterRegion{
+        width: 50%;
+        height: 3rem;
+        margin: .3rem;
+        /* border: 1px solid yellow; */
+    }
+    #countryCardsHolder{
+        display: grid;
+        grid-template-columns:  repeat(1, auto);
+        justify-content: center;
+        align-items: center;
+    }
+    #cardInfo{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+    }
+    #ctrl2{
+        /* border: 1px solid yellow; */
+        width: 100%;
+        height: 80%;
+        margin-bottom: 3rem;
+    }
+    #ctrl3{
+        /* border: 1px solid yellow; */
+        width: 100%;
+        align-self: flex-start;
+        margin: 0;
+    }
+    #firstDivision{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* border: 1px solid yellow; */
+        justify-content: space-between;
+        margin-right: 0;
+        margin: 0;
+        height: 40rem;
+    }
+    #ctrl2 img{
+        width: 100%;
+        height: 100%;
+    }
+    aside{
+        width: 100%;
+        padding: 0;
+        /* border: 1px solid green; */
+    }
+    #countryName{
+        font-size: 32px;
+    }
+    #aside2{
+        padding: 0;
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    #aside2 h4, aside h4{
+        margin-top: .5rem;
+    }
+    #names{
+        margin-bottom: 6rem;
+        /* padding-bottom: 1rem; */
+    }
+    #secondDivision h4{
+        margin-bottom: .5rem;
+    }
+    #secondDivision span{
+        margin-left: .3rem;
+        color: rgb(78, 77, 77);
+    }
+    #ctrl3 h4 span{
+        color: rgb(78, 77, 77);
+    }
+}

@@ -250,6 +250,7 @@ box-shadow: 0px 1px 2px 2px rgb(197, 195, 195), 0 0 10px rgba(0, 0, 0, 0.1);
         justify-content: space-between;
         margin-bottom:3rem;
         height: 12%;
+        Padding-top:5rem;
         
     }
     #firstNav h1{
@@ -315,6 +316,7 @@ box-shadow: 0px 1px 2px 2px rgb(197, 195, 195), 0 0 10px rgba(0, 0, 0, 0.1);
         justify-content: space-between;
         margin-bottom:5rem;
         height: 15%;
+        Padding-top:5rem;
     }
     #firstNav h1{
         font-size: 1rem;

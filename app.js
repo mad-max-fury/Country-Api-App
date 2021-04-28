@@ -20,7 +20,7 @@ let switchDarkLightMode = () => {
     var div = document.getElementsByTagName("div");
     for (var i = 0; i < div.length; i++) {
       if (div[i].id.includes("countryCard")) {
-        // console.log(true);
+        console.log(true);
         div[i].style.background = " hsl(209, 23%, 22%)";
         div[i].style["boxShadow"] =
           "0px 1px 2px 2px  hsl(209, 23%, 22%), 0 0 10px rgba(0, 0, 0, 0.1)";
